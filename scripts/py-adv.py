@@ -36,10 +36,24 @@ def func(x):
             print("X is not equal to 1")
     return rv
 
+def func2(x):
+    if x == "Aaron":
+        def add():
+            print("Hello Aaron.")
+    else:
+        def add():
+            print("Hello, Stranger.")
+    return add
+
+# Calling Functions
 new_func = func(1)
 new_func()
 new_func = func(2)
 new_func()
+new_func2 = func2("Aaron")
+new_func3 = func2("John")
+new_func2()
+new_func3()
 
 # inspect our functions
 # displays memory address
